@@ -1,0 +1,10 @@
+{
+  "name": "aig-wellknown",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-07-01",
+  "account_id": "6f2080ef32037479675c83f1fe86bef3",
+  "observability": { "enabled": true },
+  "routes": [
+    { "pattern": "aig.antoinebrossault.com/.well-known/opencode", "zone_name": "antoinebrossault.com" }
+  ]
+}
