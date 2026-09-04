@@ -75,7 +75,7 @@ app.get("/.well-known/opencode", (c) => {
               "Qwen/Qwen3.6-35B-A3B-FP8": {
                 name: "Qwen3.6 35B A3B FP8",
                 canReason: false,
-                imageInput: true,
+                modalities: { input: ["text", "image"], output: ["text"] },
                 costPer1mIn: 0,
                 costPer1mOut: 0,
                 contextWindow: 262144,
@@ -84,7 +84,7 @@ app.get("/.well-known/opencode", (c) => {
               "Qwen3.8-27B": {
                 name: "Qwen3.8 27B",
                 canReason: false,
-                imageInput: true,
+                modalities: { input: ["text", "image"], output: ["text"] },
                 costPer1mIn: 0,
                 costPer1mOut: 0,
                 contextWindow: 262144,
@@ -107,7 +107,7 @@ app.get("/.well-known/opencode", (c) => {
               "workers-ai/@cf/moonshotai/kimi-k2.6": {
                 name: "Kimi K2.6",
                 canReason: true,
-                imageInput: true,
+                modalities: { input: ["text", "image"], output: ["text"] },
                 costPer1mIn: 0.95,
                 costPer1mOut: 4.0,
                 contextWindow: 262144,
@@ -116,7 +116,7 @@ app.get("/.well-known/opencode", (c) => {
               "@cf/zai-org/glm-4.7-flash": {
                 name: "GLM 4.7 Flash",
                 canReason: true,
-                imageInput: true,
+                modalities: { input: ["text", "image"], output: ["text"] },
                 costPer1mIn: 0.06,
                 costPer1mOut: 0.4,
                 contextWindow: 131072,
@@ -125,7 +125,7 @@ app.get("/.well-known/opencode", (c) => {
               "@cf/openai/gpt-oss-120b": {
                 name: "GPT-OSS 120B",
                 canReason: true,
-                imageInput: true,
+                modalities: { input: ["text", "image"], output: ["text"] },
                 costPer1mIn: 0.35,
                 costPer1mOut: 0.75,
                 contextWindow: 128000,
@@ -134,7 +134,7 @@ app.get("/.well-known/opencode", (c) => {
               "@cf/google/gemma-4-26b-a4b-it": {
                 name: "Gemma 4 26B",
                 canReason: true,
-                imageInput: true,
+                modalities: { input: ["text", "image"], output: ["text"] },
                 costPer1mIn: 0.1,
                 costPer1mOut: 0.3,
                 contextWindow: 256000,
